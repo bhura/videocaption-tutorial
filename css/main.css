@@ -22,7 +22,20 @@ h1, h2 {
   text-align: center;
 }
 
-video, audio, .mejs-treehouse {
+.videoWrapper, .audioWrapper {
   margin: 0 auto;
   display: block;
+  text-align: center;
+}
+.videoWrapper {
+  width: 852px;
+
+}
+.audioWrapper {
+  width: 400px;
+}
+.mejs__player {
+  margin: 0 auto;
+  width: 852px;
+
 }
