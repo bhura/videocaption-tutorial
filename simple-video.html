@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <!-- Add any other renderers you need; see Use Renderers for more information -->
+    <link rel="stylesheet" href="css/mediaelementplayer.min.css" />
   </head>
   <body>
 
@@ -16,19 +20,18 @@
     <div class="wrapper">
 
       <h2>Video Example</h2>
-
-      <video controls>
-        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
-        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
-        <track srclang="en" label="English" src="bridge-caption.vtt" default kind="subtitles">  
-      </video>
-
+      <div class="videoWrapper">
+        <video controls width="852px" height="550px" class="mejs__player">
+          <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
+          <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
+        </video>
+     </div>
       <h2>Audio Example</h2>
-
-      <audio controls>
-        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
-      </audio>
-
+      <div class="audioWrapper">
+        <audio controls class="mejs__player" width="400px">
+          <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
+        </audio>
+      </div>
     </div>
 
   </body>
